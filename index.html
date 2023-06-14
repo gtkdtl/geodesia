@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>RGNP CU</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h4>Red Geodésica Nacional Pasiva en CU</h4>
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <p>Estudio de las placas de la Red Geodésica Nacional Pasiva</p>
+        </div>
+
+
+
+        <div class="col-sm-12">
+          
+          <iframe
+            src="https://lemto.maps.arcgis.com/apps/instant/basic/index.html?appid=12d8ac49378f4e7b9a71579a0ab16ab7&locale=es-419"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+            >iFrames are not supported on this page.</iframe
+          >
+        </div>
+
+        <div class="col-sm-2">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal-0"
+          >
+            Placa RGNP Ingeniería
+          </button>
+          
+          </div>
+        
+        <div class="col-sm-2">
+          
+        
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal-1"
+          >
+            Placa RGNP Geofísica
+          </button>
+         </div>
+        
+        <div class="col-sm-2">
+          
+        
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal-2"
+          >
+            Placa RGNP Odontología
+          </button>
+        </div>
+
+        <div class="col-sm-12">
+          <div
+            class="modal fade modal-xl"
+            id="exampleModal-0"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Placa Ingeniería
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card card-body">
+                    <model-viewer
+                      src="/modelos/IngenieriaL.glb"
+                      alt="Placa Ingeniería"
+                      enable-pan
+                      poster="https://cdn.glitch.global/0ca2ada3-b62e-4745-a545-8b6216dcfd16/5.png?v=1686508027159"
+                      reveal="manual"
+                      ar
+                      ar-modes="scene-viewer webxr"
+                      camera-controls
+                      field-of-view="45deg"
+                      min-field-of-view="1deg"
+                      camera-orbit="0deg 0deg 0m"
+                      interpolation-decay="100"
+                      class="placaFI"
+                      onclick="dismissPoster()"
+                    ></model-viewer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade modal-xl"
+            id="exampleModal-1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModsalsLabel">
+                    Placa Geofísica
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card card-body">
+                    <model-viewer
+                      src="/modelos/GeofisicaL.glb"
+                      alt="Placa Geofisica"
+                      enable-pan
+                      poster="https://cdn.glitch.global/0ca2ada3-b62e-4745-a545-8b6216dcfd16/6.png?v=1686508027770"
+                      reveal="manual"
+                      ar
+                      ar-modes="scene-viewer webxr"
+                      camera-controls
+                      field-of-view="45deg"
+                      min-field-of-view="1deg"
+                      camera-orbit="0deg 0deg 0m"
+                      interpolation-decay="100"
+                      class="placaFI"
+                      onclick="dismissPoster()"
+                    ></model-viewer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade modal-xl"
+            id="exampleModal-2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="examplseModalLabel">
+                    Placa Odontología
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card card-body">
+                    <model-viewer
+                      src="/modelos/OdontoologiaL.glb"
+                      alt="Placa Geofisica"
+                      enable-pan
+                      poster="https://cdn.glitch.global/0ca2ada3-b62e-4745-a545-8b6216dcfd16/4.png?v=1686508028391"
+                      reveal="manual"
+                      ar
+                      ar-modes="scene-viewer webxr"
+                      camera-controls
+                      field-of-view="45deg"
+                      min-field-of-view="1deg"
+                      camera-orbit="0deg 0deg 0m"
+                      interpolation-decay="100"
+                      class="placaFI"
+                      onclick="dismissPoster()"
+                    ></model-viewer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function dismissPoster() {
+            const modelViewer = document.querySelector(".placaFI");
+            modelViewer.dismissPoster();
+          }
+        </script>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>
